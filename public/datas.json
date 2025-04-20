@@ -1,0 +1,40 @@
+[
+	{
+		"id": 1,
+		"nom": "Créer une application React",
+		"objectif": "Pour ce projet, il s'agit de réaliser l'interface front-end complète du nouveau site Kasa en React, à partir des maquettes Figma et d'un fichier JSON simulant les données.",
+		"problématiques": [
+			"Les éléments sont créés en respectant fidèlement la maquette.",
+			"Le site comprend plusieurs pages : accueil, à propos, erreur 404 et une page logement dynamique en fonction des données.",
+			"À partir des données fournies dans le fichier JSON, les éléments sont affichés de manière dynamique.",
+			"L'application est responsive."
+		],
+		"solutions": [
+			"Initialisation de l'application avec Vite et développement de l'interface à l'aide de composants React.",
+			"Configuration de la navigation entre les pages avec React Router.",
+			"Utilisation des hooks tels que useParams et useState, ainsi que des props, pour la gestion des données.",
+			"Application des styles selon la maquette Figma, avec utilisation de Sass et des media queries."
+		],
+		"soutenance": [
+			"Présentation des différentes pages, avec la navigation entre elles, et les interactions avec tous les éléments interactifs.",
+			"Parcours des fichiers de code avec le mentor. Mise en avant des différents composants React.",
+			"Questions sur la méthodologie adoptée et sur les livrables."
+		],
+		"lienURL": "https://github.com/claire-vaugarny/Projet5_Kasa.git",
+		"image": [
+            "/images/Kasa_accueil.webp",
+            "/images/Kasa_logement.webp"
+        ]
+	},
+
+	{
+		"id": 2,
+		"nom": "Développement web avec JavaScript",
+		"objectif": "",
+		"problématiques": [],
+		"solutions": [],
+		"soutenance": [],
+		"lienURL": "https://github.com/claire-vaugarny/Projet5_Kasa.git",
+		"images": []
+	}
+]
