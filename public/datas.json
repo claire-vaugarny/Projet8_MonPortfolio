@@ -1,6 +1,29 @@
 [
+    {
+        "id": 1,
+        "nom": "Créer une page web dynamique avec JavaScript et Node.js",
+        "objectif": "",
+        "problématiques": [
+            "Communication avec le backend depuis le frontend pour gérer l'affichage des projets et la connexion de l'utilisateur de façon dynamique.",
+            "Gestion de la connexion et de la déconnexion de l'utilisateur.",
+            "Passage de la page d'accueil en \"mode édition\" lors de la connexion de l'utilisateur, puis retour à l'affichage normal lors de sa déconnexion."
+        ],
+        "solutions": [
+            "Test de l'API fournie avec Postman pour les différentes méthodes GET, POST, PUT et DELETE, puis intégration au frontend.",
+            "La connexion de l'utilisateur est gérée par un token envoyé depuis le backend et stocké dans le localStorage.",
+            "Utilisation dynamique des classes CSS pour appliquer les changements tout en respectant la maquette Figma."
+        ],
+        "soutenance": [
+            "Présentation des différentes fonctionnalités liées aux projets.",
+            "Présentation du système de connexion.",
+            "Explication du fonctionnement des appels API et de la récupération des données."
+        ],
+        "lienURL": "https://github.com/claire-vaugarny/Projet3-architect-portfolio.git",
+        "images": ["/images/SophieBluel_accueil.webp","/images/SophieBluel_login.webp"]
+    },
+    
 	{
-		"id": 1,
+		"id": 2,
 		"nom": "Créer une application React",
 		"objectif": "Pour ce projet, il s'agit de réaliser l'interface front-end complète du nouveau site Kasa en React, à partir des maquettes Figma et d'un fichier JSON simulant les données.",
 		"problématiques": [
@@ -21,20 +44,7 @@
 			"Questions sur la méthodologie adoptée et sur les livrables."
 		],
 		"lienURL": "https://github.com/claire-vaugarny/Projet5_Kasa.git",
-		"image": [
-            "/images/Kasa_accueil.webp",
-            "/images/Kasa_logement.webp"
-        ]
-	},
 
-	{
-		"id": 2,
-		"nom": "Développement web avec JavaScript",
-		"objectif": "",
-		"problématiques": [],
-		"solutions": [],
-		"soutenance": [],
-		"lienURL": "https://github.com/claire-vaugarny/Projet5_Kasa.git",
-		"images": []
+		"image": ["/images/Kasa_accueil.webp", "/images/Kasa_logement.webp"]
 	}
 ]

@@ -1,7 +1,13 @@
-import Header from "./components/Header";
+import Navbar from './components/Navbar';
+import ProjectSection from './components/projectSection/ProjectSection';
 
-function App(){
-    return <Header />
+function App() {
+	return (
+		<div>
+			<Navbar />
+			<ProjectSection />
+		</div>
+	);
 }
 
-export default App ;
+export default App;
