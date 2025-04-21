@@ -1,54 +1,45 @@
 @use '../../variables';
 
 .projectCardContainer {
+	width: 45%;
+	margin: 10px;
+	a {
+		text-decoration: none;
+	}
+	.projectCard {
+		border-radius: 10px;
+		height: 340px;
+		width: 100%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
 
-  // flex-wrap: wrap;
-  width: 40%;
-  margin: 10px;
-  // height: fit-content;
-  a {
-    text-decoration: none;
-  }
-  .projectCard {
-    border-radius: 10px;
-    height: 340px;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    
-    overflow: hidden;
+		overflow: hidden;
 
-    .projectCardShaddow {
-      background: linear-gradient(
-        transparent,
-        transparent,
-        transparent,
-        variables.$secondary-color
-      );
-      display: flex;
-      align-items: flex-end;
-      padding: 0px 20px;
-      height: 100%;
-      width: 100%;
-    }
-  }
-  h3 {
-    color: variables.$text-color-primary;
-    font-size: 18px;
-    font-weight: variables.$font-wheight-regular;
-    width: 50%;
-    line-height: 25.67px;
-  }
+		.projectCardShaddow {
+			background: linear-gradient(transparent, transparent, transparent, variables.$second-color);
+			display: flex;
+			align-items: flex-end;
+			padding: 0px 20px;
+			height: 100%;
+			width: 100%;
+		}
+	}
+	h3 {
+		color: variables.$text-color-primary;
+		font-size: 18px;
+		font-weight: variables.$font-wheight-regular;
+		width: 50%;
+		line-height: 25.67px;
+	}
 }
 
-
-@media(max-width: 768px) {
-  .projectCardContainer{
-    width: 100%;
-    padding: 10px 0;
-  }
-  .projectCard{
-    height: 255px;
-  }
+@media (max-width: 768px) {
+	.projectCardContainer {
+		width: 100%;
+		padding: 10px 0;
+	}
+	.projectCard {
+		height: 255px;
+	}
 }

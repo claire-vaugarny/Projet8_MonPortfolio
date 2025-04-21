@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import ProjectCard from "./ProjectCard";
-import './projectSection.scss'
+import ModaleProject from "./ModaleProject";
+import './projectSection.scss';
 
 function ProjectSection() {
   const [projects, setProjects] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [selectedProject, setSelectedProject] = useState(null);
 
   useEffect(() => {
     fetch('/datas.json')
@@ -31,10 +33,15 @@ function ProjectSection() {
       ) : (
         <ul className="projectsList">
           {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+            <ProjectCard
+              key={project.id}
+              project={project}
+              onClick={() => setSelectedProject(project)}
+            />
           ))}
         </ul>
       )}
+      {selectedProject && <ModaleProject project={selectedProject} />}
     </section>
   );
 }
