@@ -1,11 +1,16 @@
 import Navbar from './components/Navbar';
 import ProjectSection from './components/projectSection/ProjectSection';
+// import ProfilSection from './components/profilSection/ProfilSection';
+import './App.scss'
 
 function App() {
 	return (
-		<div>
+		<div id="bodyContainer">
 			<Navbar />
-			<ProjectSection />
+			<main className="main">
+				{/* <ProfilSection /> */}
+				<ProjectSection />
+			</main>
 		</div>
 	);
 }

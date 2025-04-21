@@ -19,6 +19,7 @@
             "Explication du fonctionnement des appels API et de la récupération des données."
         ],
         "lienURL": "https://github.com/claire-vaugarny/Projet3-architect-portfolio.git",
+		"cover": "/images/SophieBluel_accueil.webp",
         "images": ["/images/SophieBluel_accueil.webp","/images/SophieBluel_login.webp"]
     },
     
@@ -44,7 +45,7 @@
 			"Questions sur la méthodologie adoptée et sur les livrables."
 		],
 		"lienURL": "https://github.com/claire-vaugarny/Projet5_Kasa.git",
-
+		"cover": "/images/Kasa_accueil.webp",
 		"image": ["/images/Kasa_accueil.webp", "/images/Kasa_logement.webp"]
 	}
 ]

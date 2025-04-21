@@ -1,8 +1,11 @@
-@import '../../_variables.scss';
+@use '../../variables';
 
 .projectCardContainer {
-  width: calc(100% / 3);
-  padding: 20px;
+
+  // flex-wrap: wrap;
+  width: 40%;
+  margin: 10px;
+  // height: fit-content;
   a {
     text-decoration: none;
   }
@@ -10,8 +13,10 @@
     border-radius: 10px;
     height: 340px;
     width: 100%;
-    background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
     overflow: hidden;
 
     .projectCardShaddow {
@@ -19,7 +24,7 @@
         transparent,
         transparent,
         transparent,
-        $secondary-color
+        variables.$secondary-color
       );
       display: flex;
       align-items: flex-end;
@@ -28,11 +33,11 @@
       width: 100%;
     }
   }
-  h2 {
-    color: $text-color-primary;
+  h3 {
+    color: variables.$text-color-primary;
     font-size: 18px;
-    font-weight: $font-wheight-regular;
-    width: 40%;
+    font-weight: variables.$font-wheight-regular;
+    width: 50%;
     line-height: 25.67px;
   }
 }

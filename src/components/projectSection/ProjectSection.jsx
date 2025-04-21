@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import ProjectCard from "./ProjectCard";
+import './projectSection.scss'
 
 function ProjectSection() {
   const [projects, setProjects] = useState([]);
@@ -24,11 +25,11 @@ function ProjectSection() {
   }, []);
 
   return (
-    <section id="ProjectSection">
+    <section id="ProjectSection" className="section">
       {isLoading ? (
         <p>Chargement en cours...</p>
       ) : (
-        <ul>
+        <ul className="projectsList">
           {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}

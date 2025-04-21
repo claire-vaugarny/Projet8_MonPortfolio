@@ -1,6 +1,8 @@
+import './navbar.scss'
+
 function Navbar() {
 	return (
-			<nav>
+			<nav id="navbar">
 				<ul>
 					<li>
 						<a href="#" className="linkNavbar" >
@@ -9,7 +11,7 @@ function Navbar() {
 					</li>
 					<li>
 						<a href="#" className="linkNavbar" >
-							Compétence
+							Compétences
 						</a>
 					</li>
 					<li>
