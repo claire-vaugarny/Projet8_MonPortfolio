@@ -2,7 +2,7 @@
     {
         "id": 1,
         "nom": "Créer une page web dynamique avec JavaScript et Node.js",
-        "objectif": "",
+        "objectif": "Pour ce projet, il s'agit de contribuer au développement du site portfolio d’une architecte d’intérieur, en prenant en charge l’interface front-end de plusieurs fonctionnalités, dans le respect du design fourni et en interaction avec le back-end existant.",
         "problématiques": [
             "Communication avec le backend depuis le frontend pour gérer l'affichage des projets et la connexion de l'utilisateur de façon dynamique.",
             "Gestion de la connexion et de la déconnexion de l'utilisateur.",

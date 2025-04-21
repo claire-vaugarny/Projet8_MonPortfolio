@@ -3,14 +3,38 @@
 .ModaleProject {
 	background-color: variables.$first-color;
 	padding: 20px;
-	border-radius: 12px;
-	max-width: 800px;
 	margin: auto;
 
 	display: flex;
+	gap : 20px;
+
+	position: fixed;
+	z-index: 1000;
+	width: 85%;
+	height: 100vh;
+	.leftContainer {
+		// position: relative;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	i.fa-circle-xmark {
+		// position: absolute;
+		top: 15px;
+		left: 15px;
+		font-size: 3rem;
+		// color: #444;
+		cursor: pointer;
+	}
+
 	h2 {
-		margin-top: 0;
+		max-width:100% ;
+		margin-top: 40px;
+		// margin-bottom: 20px;
 		font-size: 24px;
+		text-align: center;
 	}
 
 	h3 {
@@ -23,42 +47,4 @@
 		font-size: 16px;
 		line-height: 1.6;
 	}
-}
-
-.modaleOverlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	background-color: rgba(0, 0, 0, 0.4);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	z-index: 1000;
-}
-
-.modaleContent {
-	background: white;
-	width: 80%;
-	max-height: 550px;
-	overflow-y: auto;
-	padding: 30px;
-	position: relative;
-	border-radius: 10px;
-	box-sizing: border-box;
-}
-
-.closeIcon {
-	position: absolute;
-	top: 20px;
-	right: 30px;
-	font-size: 24px;
-	cursor: pointer;
-}
-
-.imagesContainer img {
-	max-width: 100%;
-	margin-bottom: 10px;
-	border-radius: 8px;
 }

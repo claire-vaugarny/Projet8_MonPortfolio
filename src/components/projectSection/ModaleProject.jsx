@@ -4,10 +4,12 @@ import ImageGallery from './ImageGallery';
 function ModaleProject({project}) {
 	return (
 		<div className="ModaleProject">
-			<ImageGallery images={project.images} />
-			<div className="infoContainer">
+			<div className="leftContainer">
+				<i class="fa-solid fa-circle-xmark"></i>
+				<ImageGallery images={project.images} />
 				<h2>{project.nom}</h2>
-
+			</div>
+			<div className="rightContainer">
 				<h3>Objectif du projet :</h3>
 				<p>{project.objectif}</p>
 
