@@ -1,14 +1,22 @@
+import {useEffect} from 'react';
 import './modaleProject.scss';
 import ImageGallery from './ImageGallery';
 
 function ModaleProject({project, onClose}) {
+	useEffect(() => {
+		// Ajouter la classe quand la modale s'affiche
+		document.body.classList.add('body-no-scroll');
+
+		// Supprimer la classe quand la modale se ferme ou que le composant est démonté
+		return () => {
+			document.body.classList.remove('body-no-scroll');
+		};
+	}, []);
+
 	return (
 		<div className="ModaleProject">
 			<div className="leftContainer">
-				<i 
-                className="fa-solid fa-circle-xmark"
-                onClick={onClose}
-                ></i>
+				<i className="fa-solid fa-circle-xmark" onClick={onClose}></i>
 				<ImageGallery images={project.images} />
 				<h2>{project.nom}</h2>
 			</div>
@@ -53,7 +61,9 @@ function ModaleProject({project, onClose}) {
 				</p>
 
 				<h3>Lien vers le code :</h3>
-				<p>{project.lienURL}</p>
+				<a href={project.lienURL} target="_blank" rel="noopener noreferrer">
+					{project.lienURL}
+				</a>
 			</div>
 		</div>
 	);

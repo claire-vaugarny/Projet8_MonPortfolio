@@ -9,7 +9,7 @@ function ContactSection() {
 			<div className="contactItem">
 				<i className="fa-brands fa-github"></i>
 				<a 
-					href="https://github.com/ton-nom-d-utilisateur" 
+					href="https://github.com/claire-vaugarny" 
 					target="_blank" 
 					rel="noopener noreferrer"
 				>

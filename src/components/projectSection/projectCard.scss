@@ -3,6 +3,7 @@
 .projectCardContainer {
 	width: 45%;
 	margin: 10px;
+
 	a {
 		text-decoration: none;
 	}
@@ -15,6 +16,8 @@
 		background-position: center;
 
 		overflow: hidden;
+
+		cursor: pointer;
 
 		.projectCardShaddow {
 			background: linear-gradient(transparent, transparent, transparent, variables.$navbar-color-1);
@@ -31,8 +34,11 @@
 		font-weight: variables.$font-wheight-regular;
 		width: 50%;
 		line-height: 25.67px;
+		margin-bottom: 10px;
 	}
 }
+
+
 
 @media (max-width: 768px) {
 	.projectCardContainer {
@@ -41,5 +47,11 @@
 	}
 	.projectCard {
 		height: 255px;
+		
+		h3 {
+			width: 100%;
+			text-align: center;
+			margin-bottom: 10px;
+		}
 	}
 }
