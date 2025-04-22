@@ -1,10 +1,9 @@
 @use '../variables';
 
 #navbar {
-	background-color: variables.$second-color;
+	background-color: variables.$navbar-color-1;
 	width: 15%;
 	height: 100vh;
-	// position: fixed;
 	top: 0;
 	left: 0;
 
