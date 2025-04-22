@@ -24,7 +24,7 @@ function ContactSection() {
 				</a>
 			</div>
 			<img 
-				src="/images/mon_chat.webp" 
+				src="./images/mon_chat.webp" 
 				alt="Photo de mon chat" 
 				className="chatImage"
 			/>
