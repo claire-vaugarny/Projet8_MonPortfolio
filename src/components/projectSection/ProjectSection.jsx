@@ -27,7 +27,7 @@ function ProjectSection() {
   }, []);
 
   return (
-    <section id="ProjectSection" className="section">
+    <section id="ProjectSection" className="sectionPaire">
       {isLoading ? (
         <p>Chargement en cours...</p>
       ) : (
@@ -41,7 +41,7 @@ function ProjectSection() {
           ))}
         </ul>
       )}
-      {selectedProject && <ModaleProject project={selectedProject} />}
+      {selectedProject && <ModaleProject project={selectedProject} onClose={() => setSelectedProject(null)}/>}
     </section>
   );
 }

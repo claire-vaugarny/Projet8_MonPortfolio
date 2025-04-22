@@ -5,7 +5,7 @@ function Navbar() {
 			<nav id="navbar">
 				<ul>
 					<li>
-						<a href="#" className="linkNavbar" >
+						<a href="#ProfilSection" className="linkNavbar" >
 							Profil
 						</a>
 					</li>
@@ -20,8 +20,8 @@ function Navbar() {
 						</a>
 					</li>
 					<li>
-						<a href="#" className="linkNavbar" >
-							Futur
+						<a href="#ContactSection" className="linkNavbar" >
+							Contact
 						</a>
 					</li>
 				</ul>

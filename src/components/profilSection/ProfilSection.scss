@@ -1,0 +1,56 @@
+@use '../../variables';
+
+#ProfilSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+//   color: variables.$text-color;
+  text-align: center;
+  width: 100%;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: variables.$first-color;
+  }
+
+  img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    // border: 3px solid variables.$first-color;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    color: variables.$first-color;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    // color: variables.$link-color;
+    font-weight: bold;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: variables.$first-color;
+    }
+  }
+
+  #EtMaintenant {
+    margin-top: 40px;
+  }
+}

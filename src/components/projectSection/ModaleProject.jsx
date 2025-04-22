@@ -1,11 +1,14 @@
 import './modaleProject.scss';
 import ImageGallery from './ImageGallery';
 
-function ModaleProject({project}) {
+function ModaleProject({project, onClose}) {
 	return (
 		<div className="ModaleProject">
 			<div className="leftContainer">
-				<i class="fa-solid fa-circle-xmark"></i>
+				<i 
+                className="fa-solid fa-circle-xmark"
+                onClick={onClose}
+                ></i>
 				<ImageGallery images={project.images} />
 				<h2>{project.nom}</h2>
 			</div>
