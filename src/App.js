@@ -10,10 +10,10 @@ function App() {
 		<div id="bodyContainer">
 			<Navbar />
 			<main className="main">
-				{/* <ProfilSection /> */}
+				<ProfilSection />
 				<CompetencesSection />
-				{/* <ProjectSection /> */}
-				{/* <ContactSection /> */}
+				<ProjectSection />
+				<ContactSection />
 			</main>
 		</div>
 	);
