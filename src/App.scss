@@ -27,3 +27,10 @@ section{
 .sectionImpaire{
   background-color: variables.$background-color-2;
 }
+
+
+@media (max-width: 768px) {
+	main{
+		// flex-direction: column;
+	}
+}

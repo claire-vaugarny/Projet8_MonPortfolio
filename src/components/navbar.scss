@@ -42,3 +42,15 @@
 		}
 	}
 }
+
+
+@media (max-width: 768px) {
+	#navbar{
+		width: 100%;
+	}
+	
+	ul{
+		flex-direction: row;
+
+	}
+}
