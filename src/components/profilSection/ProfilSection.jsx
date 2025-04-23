@@ -4,7 +4,10 @@ function ProfilSection() {
     return (
         <section id="ProfilSection" className="sectionPaire">
             <h1>Bienvenue</h1>
-            <img src="./images/photo_profil.webp" alt="Ma photo de profil" />
+            <img 
+  src={`${process.env.PUBLIC_URL}/images/photo_profil.webp`} 
+  alt="Ma photo de profil" 
+/>
             <h2>Mon parcours</h2>
             <p>
                 Titulaire d'une licence en mathématiques, j'ai initialement choisi de me tourner vers l'enseignement. Bien que j'ai pris plaisir à enseigner les mathématiques, la gestion de classe en lycée s'est avérée un défi majeur pour moi.

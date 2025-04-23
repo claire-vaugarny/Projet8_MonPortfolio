@@ -24,10 +24,10 @@ function ContactSection() {
 				</a>
 			</div>
 			<img 
-				src="./images/mon_chat.webp" 
-				alt="Photo de mon chat" 
-				className="chatImage"
-			/>
+  src={`${process.env.PUBLIC_URL}/images/mon_chat.webp`} 
+  alt="Photo de mon chat" 
+  className="chatImage"
+/>
 		</section>
 	);
 }

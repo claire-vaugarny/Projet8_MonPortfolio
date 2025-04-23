@@ -9,7 +9,7 @@ function ProjectSection() {
   const [selectedProject, setSelectedProject] = useState(null);
 
   useEffect(() => {
-    fetch('./datas.json')
+    fetch(`${process.env.PUBLIC_URL}/datas.json`)
       .then((response) => {
         if (!response.ok) {
           throw new Error('Erreur lors du fetch');
